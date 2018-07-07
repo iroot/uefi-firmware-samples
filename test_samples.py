@@ -80,7 +80,7 @@ def get_files(dir):
     files = []
     for base, dirnames, filenames in os.walk(dir):
         for filename in filenames:
-            files.append(os.path.join(base, filename))
+            files.append(os.path.join(base, filename).replace(os.path.sep, '/'))
     return files
 
 
