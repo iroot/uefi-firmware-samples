@@ -14,8 +14,8 @@ class SamplesTest(unittest.TestCase):
         def __init__(self, code, firmware=None):
             self.code = code
             self.firmware = firmware
-    
-    def __init__(self, methodName = 'runTest'):
+
+    def __init__(self, methodName='runTest'):
         # The types set bins various folder representing firmware types
         # to the expected 'detected' type from the parser code.
         with open('TYPES.json', 'r') as fh:
